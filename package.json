@@ -12,5 +12,9 @@
     "@tmcw/togeojson": "^1.0.0",
     "minimist": "^1.2.0",
     "xmldom": "^0.1.27"
-  }
+  },
+  "devDependencies": {
+    "jest": "^24.3.1"
+  },
+  "files": ["index.js"]
 }

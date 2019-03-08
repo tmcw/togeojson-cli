@@ -3,17 +3,23 @@
 const tj = require("@tmcw/togeojson");
 const argv = require("minimist")(process.argv.slice(2));
 const fs = require("fs");
-const xmldom = new (require("xmldom")).DOMParser();
+const { DOMParser } = require("xmldom");
 
 function* convert(data) {
-  let snippet = data.substring(0, 200);
+  const snippet = data.substring(0, 200);
+  const parser = new DOMParser();
   if (snippet.includes("<kml")) {
-    yield* tj.kmlGen(xmldom.parseFromString(data));
+    yield* tj.kmlGen(parser.parseFromString(data));
   } else if (snippet.includes("<gpx")) {
-    yield* tj.gpxGen(xmldom.parseFromString(data));
+    yield* tj.gpxGen(parser.parseFromString(data));
   } else {
     throw new Error("Could not detect file format of an input");
   }
+}
+
+if (process.stdin.isTTY) {
+  console.log("hi");
+  process.exit(0);
 }
 
 if (process.stdin.isTTY && !argv._.length) {
@@ -44,7 +50,7 @@ togeojson FILE1 FILE2 FILE3…`);
 
   process.stdin.on("readable", () => {
     let chunk;
-    while ((chunk = stdin.read())) {
+    while ((chunk = process.stdin.read())) {
       data += chunk;
     }
   });
