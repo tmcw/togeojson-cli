@@ -9,12 +9,13 @@
     "togeojson": "index.js"
   },
   "dependencies": {
-    "@tmcw/togeojson": "^1.0.0",
+    "@tmcw/togeojson": "^2.0.0",
     "minimist": "^1.2.0",
     "xmldom": "^0.1.27"
   },
   "devDependencies": {
     "jest": "^24.3.1"
   },
+  "scripts": { "test": "jest" },
   "files": ["index.js"]
 }

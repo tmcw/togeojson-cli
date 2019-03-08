@@ -252,13 +252,9 @@
     "@types/istanbul-lib-coverage" "^1.1.0"
     "@types/yargs" "^12.0.9"
 
-"@tmcw/togeojson@^1.0.0":
-  version "1.0.0"
-  resolved "https://registry.yarnpkg.com/@tmcw/togeojson/-/togeojson-1.0.0.tgz#cbfa314e036563812b1e51edd3c32bd0b2fb74eb"
-  dependencies:
-    get-stdin "^6.0.0"
-    minimist "1.2.0"
-    xmldom "~0.1.19"
+"@tmcw/togeojson@^2.0.0":
+  version "2.0.0"
+  resolved "https://registry.yarnpkg.com/@tmcw/togeojson/-/togeojson-2.0.0.tgz#dc062f3950d414bb67a9b498dc6bccf909f8e63c"
 
 "@types/babel__core@^7.1.0":
   version "7.1.0"
@@ -995,10 +991,6 @@ function-bind@^1.1.1:
 get-caller-file@^1.0.1:
   version "1.0.3"
   resolved "https://registry.yarnpkg.com/get-caller-file/-/get-caller-file-1.0.3.tgz#f978fa4c90d1dfe7ff2d6beda2a515e713bdcf4a"
-
-get-stdin@^6.0.0:
-  version "6.0.0"
-  resolved "https://registry.yarnpkg.com/get-stdin/-/get-stdin-6.0.0.tgz#9e09bf712b360ab9225e812048f71fde9c89657b"
 
 get-stream@^4.0.0:
   version "4.1.0"
@@ -1926,7 +1918,7 @@ minimist@0.0.8:
   version "0.0.8"
   resolved "https://registry.yarnpkg.com/minimist/-/minimist-0.0.8.tgz#857fcabfc3397d2625b8228262e86aa7a011b05d"
 
-minimist@1.2.0, minimist@^1.1.1, minimist@^1.2.0:
+minimist@^1.1.1, minimist@^1.2.0:
   version "1.2.0"
   resolved "https://registry.yarnpkg.com/minimist/-/minimist-1.2.0.tgz#a35008b20f41383eec1fb914f4cd5df79a264284"
 
@@ -2894,7 +2886,7 @@ xml-name-validator@^3.0.0:
   version "3.0.0"
   resolved "https://registry.yarnpkg.com/xml-name-validator/-/xml-name-validator-3.0.0.tgz#6ae73e06de4d8c6e47f9fb181f78d648ad457c6a"
 
-xmldom@^0.1.27, xmldom@~0.1.19:
+xmldom@^0.1.27:
   version "0.1.27"
   resolved "https://registry.yarnpkg.com/xmldom/-/xmldom-0.1.27.tgz#d501f97b3bdb403af8ef9ecc20573187aadac0e9"
 
