@@ -17,11 +17,6 @@ function* convert(data) {
   }
 }
 
-if (process.stdin.isTTY) {
-  console.log("hi");
-  process.exit(0);
-}
-
 if (process.stdin.isTTY && !argv._.length) {
   console.error(`Usage:
 
