@@ -252,9 +252,9 @@
     "@types/istanbul-lib-coverage" "^1.1.0"
     "@types/yargs" "^12.0.9"
 
-"@tmcw/togeojson@^2.0.0":
-  version "2.0.0"
-  resolved "https://registry.yarnpkg.com/@tmcw/togeojson/-/togeojson-2.0.0.tgz#dc062f3950d414bb67a9b498dc6bccf909f8e63c"
+"@tmcw/togeojson@^3.0.0":
+  version "3.0.0"
+  resolved "https://registry.yarnpkg.com/@tmcw/togeojson/-/togeojson-3.0.0.tgz#90bf3c8895334a3efee181dbeb9659ecc5d8f701"
 
 "@types/babel__core@^7.1.0":
   version "7.1.0"
