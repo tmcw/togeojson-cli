@@ -54,7 +54,7 @@ togeojson FILE1 FILE2 FILE3…`);
     console.log(
       JSON.stringify({
         type: "FeatureCollection",
-        features: Array.from(convert(data))
+        features: Array.from(convert(data)),
       })
     );
   });
