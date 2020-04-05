@@ -2,6 +2,22 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+# [2.0.0](https://github.com/tmcw/togeojson-cli/compare/v1.0.4...v2.0.0) (2020-04-05)
+
+
+### Features
+
+* Update @tmcw/togeojson dep to 4.0.0 ([ae53bad](https://github.com/tmcw/togeojson-cli/commit/ae53bad4f3346080307adf5b0d06eb3a1bb8295f))
+
+
+### BREAKING CHANGES
+
+* This new version of togeojson has a signficant change:
+features with no geometry are now converted into features with null
+geometry, instead of ignored.
+
+
+
 ## [1.0.4](https://github.com/tmcw/togeojson-cli/compare/v1.0.3...v1.0.4) (2020-04-03)
 
 
