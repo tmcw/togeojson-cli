@@ -9,14 +9,14 @@
     "togeojson": "index.js"
   },
   "dependencies": {
-    "@tmcw/togeojson": "^4.0.0",
-    "minimist": "^1.2.0",
-    "standard-version": "^5.0.1",
-    "xmldom": "^0.1.27"
+    "@tmcw/togeojson": "^4.3.0",
+    "minimist": "^1.2.5",
+    "standard-version": "^9.0.0",
+    "xmldom": "^0.4.0"
   },
   "devDependencies": {
-    "jest": "^24.3.1",
-    "prettier": "^2.0.2"
+    "jest": "^26.6.3",
+    "prettier": "^2.2.1"
   },
   "scripts": {
     "test": "jest",
