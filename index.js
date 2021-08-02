@@ -12,6 +12,8 @@ function* convert(data) {
     yield* tj.kmlGen(parser.parseFromString(data));
   } else if (snippet.includes("<gpx")) {
     yield* tj.gpxGen(parser.parseFromString(data));
+  } else if (snippet.includes("<TrainingCenterDatabase")) {
+    yield* tj.tcxGen(parser.parseFromString(data));
   } else {
     throw new Error("Could not detect file format of an input");
   }
