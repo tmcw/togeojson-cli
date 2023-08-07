@@ -11,6 +11,18 @@ exports[`@tmcw/togeojson-cli converts a file 1`] = `
 "
 `;
 
+exports[`@tmcw/togeojson-cli converts kml with folders 1`] = `
+"{
+  \\"type\\": \\"FeatureCollection\\",
+  \\"features\\": [
+    {\\"type\\":\\"Feature\\",\\"geometry\\":{\\"type\\":\\"Point\\",\\"coordinates\\":[1,1,0]},\\"properties\\":{\\"name\\":\\"Simple placemark one\\",\\"description\\":\\"One\\"}},
+    {\\"type\\":\\"Feature\\",\\"geometry\\":{\\"type\\":\\"Point\\",\\"coordinates\\":[2,2,0]},\\"properties\\":{\\"name\\":\\"Simple placemark two\\",\\"description\\":\\"Two\\",\\"parents\\":[{\\"name\\":\\"Folder One\\"},{\\"name\\":\\"Nested\\"}]}},
+    {\\"type\\":\\"Feature\\",\\"geometry\\":{\\"type\\":\\"Point\\",\\"coordinates\\":[3,3,0]},\\"properties\\":{\\"name\\":\\"Simple placemark three\\",\\"description\\":\\"Four\\",\\"parents\\":[{\\"name\\":\\"Folder Three\\"}]}}
+  ]
+}
+"
+`;
+
 exports[`@tmcw/togeojson-cli converts multiple files 1`] = `
 "{
   \\"type\\": \\"FeatureCollection\\",
