@@ -1,6 +1,6 @@
-// Jest Snapshot v1, https://goo.gl/fbAQLP
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
 
-exports[`@tmcw/togeojson-cli converts a file 1`] = `
+exports[`@tmcw/togeojson-cli > converts a file 1`] = `
 "{
   \\"type\\": \\"FeatureCollection\\",
   \\"features\\": [
@@ -11,7 +11,7 @@ exports[`@tmcw/togeojson-cli converts a file 1`] = `
 "
 `;
 
-exports[`@tmcw/togeojson-cli converts kml with folders 1`] = `
+exports[`@tmcw/togeojson-cli > converts kml with folders 1`] = `
 "{
   \\"type\\": \\"FeatureCollection\\",
   \\"features\\": [
@@ -23,7 +23,7 @@ exports[`@tmcw/togeojson-cli converts kml with folders 1`] = `
 "
 `;
 
-exports[`@tmcw/togeojson-cli converts multiple files 1`] = `
+exports[`@tmcw/togeojson-cli > converts multiple files 1`] = `
 "{
   \\"type\\": \\"FeatureCollection\\",
   \\"features\\": [
@@ -83,7 +83,7 @@ exports[`@tmcw/togeojson-cli converts multiple files 1`] = `
 "
 `;
 
-exports[`@tmcw/togeojson-cli supports stdin 1`] = `
+exports[`@tmcw/togeojson-cli > supports stdin 1`] = `
 "{\\"type\\":\\"FeatureCollection\\",\\"features\\":[{\\"type\\":\\"Feature\\",\\"geometry\\":{\\"type\\":\\"Point\\",\\"coordinates\\":[-122.0822035425683,37.42228990140251,0]},\\"properties\\":{\\"name\\":\\"Simple placemark\\",\\"description\\":\\"Attached to the ground. Intelligently places itself \\\\n       at the height of the underlying terrain.\\"}},{\\"type\\":\\"Feature\\",\\"geometry\\":{\\"type\\":\\"Point\\",\\"coordinates\\":[-120.0822035425683,37.42228990140251,0]},\\"properties\\":{\\"name\\":\\"Simple placemark two\\",\\"description\\":\\"Attached to the ground. Intelligently places itself \\\\n       at the height of the underlying terrain.\\"}}]}
 "
 `;
