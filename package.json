@@ -9,7 +9,7 @@
     "togeojson": "index.js"
   },
   "dependencies": {
-    "@tmcw/togeojson": "^4.3.0",
+    "@tmcw/togeojson": "^5.8.0",
     "minimist": "^1.2.5",
     "standard-version": "^9.0.0",
     "xmldom": "^0.4.0"
