@@ -24,5 +24,8 @@
   },
   "files": [
     "index.js"
-  ]
+  ],
+  "engines": {
+    "node": "*"
+  }
 }
