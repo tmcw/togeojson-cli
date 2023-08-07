@@ -1,6 +1,6 @@
 {
   "name": "@tmcw/togeojson-cli",
-  "version": "2.0.1",
+  "version": "3.0.0",
   "description": "Convert KML and GPX to GeoJSON on the CLI",
   "main": "index.js",
   "author": "Tom MacWright",
