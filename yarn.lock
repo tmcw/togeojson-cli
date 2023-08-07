@@ -479,10 +479,10 @@
   dependencies:
     "@sinonjs/commons" "^1.7.0"
 
-"@tmcw/togeojson@^4.3.0":
-  version "4.3.0"
-  resolved "https://registry.yarnpkg.com/@tmcw/togeojson/-/togeojson-4.3.0.tgz#8a9697b276d52ddc174d7fd559397f98d7c953af"
-  integrity sha512-naEKUYY7CbHQoj1R6e+DiEO6yrCwbX6NkLuy2AXkCD9zvsvWEY+dbY8mcD254GNc+07NROSjuTMocicn3Tigsg==
+"@tmcw/togeojson@^5.8.0":
+  version "5.8.0"
+  resolved "https://registry.yarnpkg.com/@tmcw/togeojson/-/togeojson-5.8.0.tgz#a9dba2d55c95e88a78078175181209f2f6d64cfd"
+  integrity sha512-mZGx23exIOpMy9uxIRZ22RhS69xtC/F70USOcurh9r7JvYHLWjS38Ak01yq+3Hybsze/UiO5eW3e8hf3AeiibQ==
 
 "@types/babel__core@^7.0.0", "@types/babel__core@^7.1.7":
   version "7.1.12"

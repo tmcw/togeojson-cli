@@ -6,6 +6,10 @@ describe("@tmcw/togeojson-cli", () => {
     const { stdout } = await exec("./index.js data/twopoints.kml");
     expect(stdout).toMatchSnapshot();
   });
+  it("converts kml with folders", async () => {
+    const { stdout } = await exec("./index.js data/folders.kml");
+    expect(stdout).toMatchSnapshot();
+  });
   it("converts multiple files", async () => {
     const { stdout } = await exec(
       "./index.js data/twopoints.kml data/blue_hills.gpx"

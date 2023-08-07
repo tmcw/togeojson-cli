@@ -5,11 +5,26 @@ const argv = require("minimist")(process.argv.slice(2));
 const fs = require("fs");
 const { DOMParser } = require("xmldom");
 
+function* flattenKmlFolders(node, parents = []) {
+  const nextParents = [...parents, node.meta].filter(Boolean);
+  for (const child of node.children || []) {
+    if (child.type != 'folder') {
+      if (nextParents.length) {
+        child.properties.parents = nextParents
+      }
+      yield child;
+    } else {
+      yield* flattenKmlFolders(child, nextParents);
+    }
+  }
+}
+
 function* convert(data) {
   const snippet = data.substring(0, 200);
   const parser = new DOMParser();
   if (snippet.includes("<kml")) {
-    yield* tj.kmlGen(parser.parseFromString(data));
+    const tree = tj.kmlWithFolders(parser.parseFromString(data));
+    yield* flattenKmlFolders(tree);
   } else if (snippet.includes("<gpx")) {
     yield* tj.gpxGen(parser.parseFromString(data));
   } else if (snippet.includes("<TrainingCenterDatabase")) {

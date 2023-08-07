@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2">
+  <Placemark>
+    <name>Simple placemark one</name>
+    <description>One</description>
+    <Point>
+      <coordinates>1,1,0</coordinates>
+    </Point>
+  </Placemark>
+  <Folder>
+    <name>Folder One</name>
+    <Folder>
+      <name>Nested</name>
+      <Placemark>
+        <name>Simple placemark two</name>
+        <description>Two</description>
+        <Point>
+          <coordinates>2,2,0</coordinates>
+        </Point>
+      </Placemark>
+    </Folder>
+  </Folder>
+  <Folder>
+    <name>Folder Three</name>
+    <Placemark>
+      <name>Simple placemark three</name>
+      <description>Four</description>
+      <Point>
+        <coordinates>3,3,0</coordinates>
+      </Point>
+    </Placemark>
+  </Folder>
+</kml>
