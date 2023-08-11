@@ -9,9 +9,8 @@
     "togeojson": "index.js"
   },
   "dependencies": {
-    "@tmcw/togeojson": "^5.8.0",
-    "minimist": "^1.2.5",
-    "standard-version": "^9.0.0",
+    "@tmcw/togeojson": "^5.8.1",
+    "minimist": "^1.2.8",
     "xmldom": "^0.6.0"
   },
   "devDependencies": {
@@ -19,8 +18,7 @@
     "vitest": "^0.34.1"
   },
   "scripts": {
-    "test": "vitest --globals run",
-    "release": "standard-version"
+    "test": "vitest --globals run"
   },
   "files": [
     "index.js"
